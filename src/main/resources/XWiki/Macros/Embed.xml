@@ -182,9 +182,8 @@ DASH:
 // (https://github.com/Dash-Industry-Forum/dash.js)
 require.config({
   'paths': {
-    'video-js': "$services.webjars.url('video-js/4.11.4/video.js')",
-    'dash-webm': "$services.webjars.url('dash.js/1.4/contrib/webmjs/dash.webm.min.js')",
-    'videojs-dashjs': "$services.webjars.url('dash.js/1.4/contrib/videojs/videojs-tech-dashjs.js')"
+    'video-js': "$services.webjars.url('video-js/8.17.4/video.js')",
+    'videojs-dashjs': "$services.webjars.url('videojs-dash/5.1.0/main.js')"
   }
 });
 
@@ -197,35 +196,22 @@ function loadCss(url) {
   document.getElementsByTagName('head')[0].appendChild(link);
 }
 
-// Set up DASH player.
-function setupPlayer(videoDashID) {
-  // If the dash is not supported on the browser, play an flv video.
-  if (videojs.Dashjs.isSupported()) {
-    // Initalize the video.js player.
-    var myPlayer = videojs(videoDashID, {context: new Webm.di.WebmContext()});
-  } else {
-    var flvVideoURL = document.getElementById(videoDashID).getElementsByClassName('flv-video-url')[0].value;
-    var sourceElement = document.getElementById(videoDashID).getElementsByTagName('source')[0];
-    sourceElement.setAttribute('src', flvVideoURL);
-    sourceElement.setAttribute('type', 'video/x-flv');
-    videojs(videoDashID);
-  }
-}
+require(['jquery', 'video-js'], function($, videojs) {
+  loadCss("$services.webjars.url('video-js/8.17.4/video-js.min.css')");
 
-require(['jquery', 'dash-webm', 'video-js'], function($, dashwebm, videojs) {
-  loadCss("$services.webjars.url('video-js/4.11.4/video-js.min.css')");
-  videojs.options.flash.swf = "$services.webjars.url('video-js/4.11.4/video-js.swf')";
   require(['videojs-dashjs'], function(videojsdash) {
     $(function() {
       // Initialize DASH videos.
       $('video.dashvideo').each(function(index) {
         var videoDashID = 'dash-video' + index;
         $(this).attr('id', videoDashID);
-        setupPlayer(videoDashID);
+        var myPlayer = videojs(videoDashID);
       });
     });
   });
-});</code>
+
+});
+</code>
     </property>
     <property>
       <name>Js code for Video.js</name>
