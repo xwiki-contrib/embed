@@ -25,11 +25,11 @@
     <parent>
         <groupId>org.xwiki.contrib.embed</groupId>
         <artifactId>embed-webjar</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
     <packaging>jar</packaging>
     <artifactId>video-js</artifactId>
-    <version>8.17.4</version>
+    <version>1.0.1</version>
     <name>Video.js</name>
     <description>WebJar for Video.js</description>
     <url>http://webjars.org</url>

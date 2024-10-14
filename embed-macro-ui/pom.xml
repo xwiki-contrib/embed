@@ -24,12 +24,12 @@
   <parent>
     <groupId>org.xwiki.contrib.embed</groupId>
     <artifactId>embed-parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>embed-macro-ui</artifactId>
   <packaging>xar</packaging>
   <name>Embed macro UI</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <description>Displays embed content like videos from video platform and attachment and many other things from external services.</description>
   <properties>
     <xwiki.extension.name>Embed macro</xwiki.extension.name>
@@ -59,12 +59,12 @@
     <dependency>
       <groupId>org.xwiki.contrib.embed</groupId>
       <artifactId>video-js</artifactId>
-      <version>8.17.4</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.xwiki.contrib.embed</groupId>
       <artifactId>videojs-dash</artifactId>
-      <version>5.1.0</version>
+      <version>1.0.1</version>
     </dependency>
   </dependencies>
 </project>
