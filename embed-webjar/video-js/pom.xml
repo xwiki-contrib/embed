@@ -25,11 +25,11 @@
     <parent>
         <groupId>org.xwiki.contrib.embed</groupId>
         <artifactId>embed-webjar</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <packaging>jar</packaging>
     <artifactId>video-js</artifactId>
-    <version>8.17.4</version>
+    <version>1.0.0</version>
     <name>Video.js</name>
     <description>WebJar for Video.js</description>
     <url>http://webjars.org</url>
@@ -89,7 +89,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/video.js-${upstream.version}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/video.js-${upstream.version}" includes="video*.js video*.css font/ lang/"/>
+                                    <fileset dir="${project.build.directory}/video.js-${upstream.version}" includes="video*.js video*.css font/ lang/" />
                                 </move>
                             </target>
                         </configuration>
