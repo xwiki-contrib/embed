@@ -343,6 +343,12 @@
 {{/code}}
 
 {{embed url="//viddler.com/embed/1391b468/?f=1&amp;autoplay=0&amp;player=full&amp;secret=59822701&amp;make_responsive=false&amp;loop=false&amp;nologo=false&amp;disableseek=false&amp;disablebackwardseek=false&amp;disableforwardseek=false&amp;hd=false"/}}
+
+== Aha! roadmaps ==
+
+{{code}}
+{{embed url="https://example.aha.io/shared/ciib292b37aa2a8b3c0d1ba1333e4c3d"/}}
+{{/code}}
 </content>
   <attachment>
     <filename>test-vid.webm</filename>
@@ -1066,6 +1072,14 @@ require(['jquery', 'video-js'], function($, videojs) {
     #end
     #showIframe($macro.url 'type="text/html" scrolling="no"' 437 288)
 
+  #elseif ($macro.urlParam.contains('.aha.io'))
+    #set($requestParams = $escapetool.url({"footer":false, "header": false}))
+    #set ($macro.url = $macro.urlParam)
+    #if (!$macro.url.contains('?'))
+      #set ($macro.url = "$macro.url?$requestParams")
+    #end
+    #showIframe($macro.url 'type="text/html"' 800 560)
+
   #else
     {{/html}}
 
@@ -1121,7 +1135,22 @@ require(['jquery', 'video-js'], function($, videojs) {
       <defaultCategory>Content</defaultCategory>
     </property>
     <property>
-      <description>Display in your wiki page any video from Youtube, Dailymotion, Google Video or Vimeo.
+      <description>Show in your wiki page many external content. Currently this support theses external services:
+* Youtube
+* Dailymotion
+* Vimeo
+* x.com
+* Google doc, sheets and slides
+* Google calendar
+* Google maps
+* Facebook
+* Linkedin
+* Figma
+* Spotify
+* Prezi
+* Flickr
+* Viddler
+* Aha! roadmaps
 
 Also play a video attached to your wiki page using Video.js library. mp4, webm and ogv formats are supported.
 
