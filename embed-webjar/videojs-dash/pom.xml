@@ -29,7 +29,7 @@
     </parent>
     <packaging>jar</packaging>
     <artifactId>videojs-dash</artifactId>
-    <version>5.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <name>videojs-dash</name>
     <description>WebJar for video.js DASH</description>
     <url>http://webjars.org</url>

@@ -29,7 +29,7 @@
     </parent>
     <packaging>jar</packaging>
     <artifactId>video-js</artifactId>
-    <version>8.17.4</version>
+    <version>1.1.1-SNAPSHOT</version>
     <name>Video.js</name>
     <description>WebJar for Video.js</description>
     <url>http://webjars.org</url>

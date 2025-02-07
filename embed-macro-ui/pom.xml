@@ -59,12 +59,12 @@
     <dependency>
       <groupId>org.xwiki.contrib.embed</groupId>
       <artifactId>video-js</artifactId>
-      <version>8.17.4</version>
+      <version>1.1.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.xwiki.contrib.embed</groupId>
       <artifactId>videojs-dash</artifactId>
-      <version>5.1.0</version>
+      <version>1.1.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
