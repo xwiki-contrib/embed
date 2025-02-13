@@ -1099,7 +1099,7 @@ require(['jquery', 'video-js'], function($, videojs) {
 ## The ratio value is used to compute a bootstrap css class: embed-responsive-16by9.
 #if ($xcontext.macro.params.ratio)
   #set ($ratio = $xcontext.macro.params.ratio.replace(':', 'by'))
-  #set ($embedContainerClass = " class='embed-responsive embed-responsive-$ratio'")
+  #set ($embedContainerClass = " class='embed-responsive embed-responsive-$escapetool.xml($ratio)'")
   #set ($embedItemClass = 'embed-responsive-item')
 #end
 {{/velocity}}
