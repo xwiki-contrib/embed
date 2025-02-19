@@ -1091,7 +1091,7 @@ require(['jquery', 'video-js'], function($, videojs) {
 {{/velocity}}
 
 {{velocity output="false"}}
-#set ($widthParam = $escapetool.xml($wikimacro.parameters.widht))
+#set ($widthParam = $escapetool.xml($wikimacro.parameters.width))
 #set ($heightParam = $escapetool.xml($wikimacro.parameters.height))
 #set ($embedContainerClass = '')
 #set ($embedItemClass = '')
