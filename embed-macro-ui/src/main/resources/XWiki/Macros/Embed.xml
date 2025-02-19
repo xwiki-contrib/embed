@@ -1135,32 +1135,13 @@ require(['jquery', 'video-js'], function($, videojs) {
       <defaultCategory>Content</defaultCategory>
     </property>
     <property>
-      <description>Show in your wiki page many external content. Currently this support theses external services:
-* Youtube
-* Dailymotion
-* Vimeo
-* x.com
-* Google doc, sheets and slides
-* Google calendar
-* Google maps
-* Facebook
-* Linkedin
-* Figma
-* Spotify
-* Prezi
-* Flickr
-* Viddler
-* Aha! roadmaps
-
-Also play a video attached to your wiki page using Video.js library. mp4, webm and ogv formats are supported.
-
-The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTTP).</description>
+      <description/>
     </property>
     <property>
       <id>embed</id>
     </property>
     <property>
-      <name>Embed content</name>
+      <name/>
     </property>
     <property>
       <supportsInlineMode>0</supportsInlineMode>
@@ -1235,7 +1216,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The URL of the video you want to display on your page (Vimeo, Youtube, Daily Motion or Google Video only).</description>
+      <description/>
     </property>
     <property>
       <mandatory>0</mandatory>
@@ -1313,7 +1294,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The width of the embedded video, in pixels.</description>
+      <description/>
     </property>
     <property>
       <mandatory>0</mandatory>
@@ -1391,7 +1372,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The height of the embedded video, in pixels. By default a height of 400 pixels is used.</description>
+      <description/>
     </property>
     <property>
       <mandatory>0</mandatory>
@@ -1469,7 +1450,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The name of the video attachment.</description>
+      <description/>
     </property>
     <property>
       <mandatory/>
@@ -1547,7 +1528,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The poster of the video is an image attachment that will be displayed before starting playing the video.</description>
+      <description/>
     </property>
     <property>
       <mandatory/>
@@ -1625,7 +1606,7 @@ The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTT
       <defaultValue/>
     </property>
     <property>
-      <description>The document in which the manifest.mpd file and the video streams are attached.</description>
+      <description/>
     </property>
     <property>
       <mandatory/>

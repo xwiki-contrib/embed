@@ -1,0 +1,95 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.5" reference="XWiki.Macros.EmbedTranslations" locale="">
+  <web>XWiki.Macros</web>
+  <name>EmbedTranslations</name>
+  <language/>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>0</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <parent>Macros.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <version>1.1</version>
+  <title/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>rendering.macro.embed.name=Embed content
+rendering.macro.embed.description=Show in your wiki page many external content. Currently this support theses external services: * Youtube, * Dailymotion, * Vimeo, * x.com, * Google doc, sheets and slides, * Google calendar, * Google maps, * Facebook, * Linkedin, * Figma, * Spotify, * Prezi, * Flickr, * Viddler, * Aha! roadmaps, * Also play a video attached to your wiki page using Video.js library. mp4, webm and ogv formats are supported.
+The video macro can also plays a DASH video (Dynamic Adaptive Streaming over HTTP).
+rendering.macro.embed.parameter.url.name=Content URL
+rendering.macro.embed.parameter.url.description=The URL of the content you want to display on your page. See on https://extensions.xwiki.org/xwiki/bin/view/Extension/Embed%20macro/ for more details how to get the URL.
+rendering.macro.embed.parameter.width.name=Width
+rendering.macro.embed.parameter.width.description=The width of the embedded video, in pixels.
+rendering.macro.embed.parameter.height.name=Height
+rendering.macro.embed.parameter.height.description=The height of the embedded video, in pixels. By default a height of 400 pixels is used.
+rendering.macro.embed.parameter.attachment.name=Attachment
+rendering.macro.embed.parameter.attachment.description=The name of the video attachment.
+rendering.macro.embed.parameter.videoPoster.name=Video poster
+rendering.macro.embed.parameter.videoPoster.description=The poster of the video is an image attachment that will be displayed before starting playing the video.
+rendering.macro.embed.parameter.dash.name=Dash
+rendering.macro.embed.parameter.dash.description=The document in which the manifest.mpd file and the video streams are attached.
+rendering.macro.embed.parameter.reference.name=Reference
+rendering.macro.embed.parameter.reference.description=Reference of a document in case of a video attachment.
+rendering.macro.embed.parameter.ratio.name=Ratio
+rendering.macro.embed.parameter.ratio.description=The aspect ratio of a video describes the proportional relationship between its width and its height. Possible values: '1:1', '4:3', '16:9', '21:9'.</content>
+  <object>
+    <name>XWiki.Macros.EmbedTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>bcf8314b-54a0-42fc-82ff-66594bbe4d37</guid>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <freeText>forbidden</freeText>
+        <largeStorage>0</largeStorage>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <property>
+      <scope>WIKI</scope>
+    </property>
+  </object>
+</xwikidoc>
