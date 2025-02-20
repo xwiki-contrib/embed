@@ -586,14 +586,14 @@ require(['jquery', 'video-js'], function($, videojs) {
       <cache>long</cache>
     </property>
     <property>
-      <code>#set($videojsURL = $services.webjars.url('video-js/4.11.4/'))
+      <code>#set($videojsURL = $services.webjars.url('video-js/8.17.4/'))
 @font-face{
   font-family: 'VideoJS';
   src: url('${videojsURL}font/vjs.eot');
   src: url('${videojsURL}font/vjs.eot?#iefix') format('embedded-opentype'),
-  url('${videojsURL}font/vjs.woff') format('woff'),
-  url('${videojsURL}font/vjs.ttf') format('truetype'),
-  url('${videojsURL}font/vjs.svg#icomoon') format('svg');
+  url('${videojsURL}font/VideoJS.woff') format('woff'),
+  url('${videojsURL}font/VideoJS.ttf') format('truetype'),
+  url('${videojsURL}font/VideoJS.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }</code>
