@@ -1615,7 +1615,7 @@ require(['jquery', 'video-js'], function($, videojs) {
       <name>dash</name>
     </property>
     <property>
-      <type/>
+      <type>org.xwiki.model.reference.DocumentReference</type>
     </property>
   </object>
   <object>
@@ -1693,7 +1693,7 @@ require(['jquery', 'video-js'], function($, videojs) {
       <name>reference</name>
     </property>
     <property>
-      <type/>
+      <type>org.xwiki.model.reference.DocumentReference</type>
     </property>
   </object>
   <object>
