@@ -21,7 +21,7 @@
 -->
 
 <xwikidoc xmlns:xwiki="http://www.xwiki.org" version="1.3" reference="XWiki.Macros.Embed" locale="">
-  <web>Macros</web>
+  <web>XWiki.Macros</web>
   <name>EmbedContent</name>
   <language/>
   <defaultLanguage/>
