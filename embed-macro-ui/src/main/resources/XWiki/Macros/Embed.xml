@@ -839,8 +839,8 @@ require(['jquery', 'video-js'], function($, videojs) {
       {{html clean="false"}}
       &lt;div $!embedContainerClass&gt;
         &lt;video class="video-js vjs-default-skin vjs-big-play-centered $!embedItemClass" controls preload="auto"
-               width="$widthParam" height="$heightParam" poster="$!videoPoster" data-setup=''&gt;
-          &lt;source src="$!videoURL" type="video/$!videoMimeType" /&gt;
+               width="$widthParam" height="$heightParam" $videoPosterParam data-setup=''&gt;
+          &lt;source src="$escapetool.xml($!videoURL)" type="video/$escapetool.xml($!videoMimeType)" /&gt;
         &lt;/video&gt;
       &lt;/div&gt;
       {{/html}}
@@ -867,7 +867,7 @@ require(['jquery', 'video-js'], function($, videojs) {
       {{html clean="false"}}
       &lt;div $!embedContainerClass&gt;
         &lt;video class="dashvideo video-js vjs-default-skin $!embedItemClass" controls preload="auto" width="$widthParam" height="$heightParam"&gt;
-          &lt;source src="$!manifestFileURL" type="application/dash+xml"&gt;
+          &lt;source src="$escapetool.xml($!manifestFileURL)" type="application/dash+xml"&gt;
         &lt;/video&gt;
       &lt;/div&gt;
       {{/html}}
