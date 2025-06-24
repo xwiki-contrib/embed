@@ -36,6 +36,7 @@
     <xwiki.extension.components>
       org.xwiki.rendering.macro.Macro/embed
     </xwiki.extension.components>
+    <xwiki.extension.category>macro</xwiki.extension.category>
   </properties>
   <dependencies>
     <dependency>
